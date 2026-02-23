@@ -62,17 +62,3 @@ Evaluation Metrics:
 - Deployment using Streamlit  
 - Model monitoring framework  
 
-Then:
-
-Scroll down
-
-Commit message:
-
-Refactor README for Capstone structure
-
-Click Commit changes
-
-After this, your GitHub will look like a real industry-level AI project.
-
-Next step (important for Capstone quality):
-Do you want to add a performance comparison table between models? That would elevate it even more.
