@@ -1,27 +1,78 @@
 # VoltAI – Battery Health Prediction
 
+## 1. Problem Statement
+Lithium-ion battery degradation significantly impacts electric vehicle reliability, safety, and maintenance costs.  
 This project predicts:
 - State of Health (SOH)
 - Remaining Useful Life (RUL)
 
-Dataset:
-NASA battery cycle dataset
+## 2. Business Impact
+- Enables predictive maintenance strategies  
+- Reduces unexpected battery failures  
+- Improves EV fleet optimization  
+- Supports data-driven maintenance planning  
 
-Models:
-- Linear Regression
-- Random Forest
-- SVR
-- XGBoost
+## 3. Dataset
+NASA Battery Aging Dataset  
+Cycle-level structured data with group-aware validation to prevent data leakage.
 
-Methodology:
-- Feature Engineering (lag features)
-- GroupKFold Cross-Validation
-- Hyperparameter tuning
-- SHAP interpretability
+## 4. Methodology
+- Data preprocessing and cleaning  
+- Feature engineering (cycle-level + lag features)  
+- Standardization for scale-sensitive models  
+- GroupKFold cross-validation  
+- Hyperparameter tuning  
 
-Agile Management:
-- Project Backlog
-- Sprint 1 Backlog (Jira)
+### Models Implemented
+- Linear Regression  
+- Random Forest  
+- Support Vector Regression (SVR)  
+- XGBoost  
 
-Tools:
-Python, Scikit-learn, SHAP, Jira
+## 5. Model Evaluation
+
+Evaluation Metrics:
+- RMSE (Root Mean Squared Error)  
+- MAE (Mean Absolute Error)  
+- R² Score  
+
+**Best Performing Model:** XGBoost  
+**Cross-Validation Strategy:** GroupKFold  
+
+## 6. Explainability
+- SHAP analysis used to interpret feature importance  
+- Identifies key degradation drivers such as voltage, temperature, and capacity  
+
+## 7. Tools & Technologies
+- Python  
+- Scikit-learn  
+- XGBoost  
+- Pandas / NumPy  
+- SHAP  
+- Jira (Agile project management)  
+
+## 8. Project Structure
+- `VoltAI_Sprint1.ipynb`  
+- `battery_cycle_level_dataset_CLEAN_FINAL.csv`  
+- `Project Backlog.png`  
+- `Sprint1 Backlog.png`  
+
+## 9. Future Improvements
+- LSTM-based temporal modeling  
+- Deployment using Streamlit  
+- Model monitoring framework  
+
+Then:
+
+Scroll down
+
+Commit message:
+
+Refactor README for Capstone structure
+
+Click Commit changes
+
+After this, your GitHub will look like a real industry-level AI project.
+
+Next step (important for Capstone quality):
+Do you want to add a performance comparison table between models? That would elevate it even more.
